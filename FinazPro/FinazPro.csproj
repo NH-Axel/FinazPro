@@ -86,5 +86,8 @@
   <ItemGroup>
     <None Include="Resources\PRACTICA EXAMEN.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PRACTICA EXAMEN1.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
