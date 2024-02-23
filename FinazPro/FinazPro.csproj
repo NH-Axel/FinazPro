@@ -46,11 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,10 +91,32 @@
     <None Include="Resources\%24this.Icon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\gris3.jpg!d" />
     <None Include="Resources\PRACTICA EXAMEN.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PRACTICA EXAMEN1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gris.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gris1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gris23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\behim.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negro1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

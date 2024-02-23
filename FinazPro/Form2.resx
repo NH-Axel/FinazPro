@@ -117,35 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="gris3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gris3.jpg!d;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="behim" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\behim.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PRACTICA EXAMEN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PRACTICA EXAMEN1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gris1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gris1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blue2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blue2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blue.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gris" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gris.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gris23" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gris23.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PRACTICA EXAMEN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PRACTICA EXAMEN.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="negro1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\negro1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
