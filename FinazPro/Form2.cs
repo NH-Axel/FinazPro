@@ -3,16 +3,23 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
+
 
 namespace FinazPro
 {
-    public partial class login : FinazPro.Form1
+    public partial class CostoProduccion : Form
     {
-        public login()
+        public CostoProduccion()
         {
             InitializeComponent();
         }
+
     }
 }
