@@ -52,6 +52,11 @@ namespace FinazPro
             // Agrega la suma total en una nueva fila al final del DataGridView
             int nuevaFila = dataGridView1.Rows.Add();
             dataGridView1.Rows[nuevaFila].Cells["CostoTotal"].Value = TotalC;
+            dataGridView1.Rows[nuevaFila].Cells["Cantidad"].Value = "Total gastado";
+            // La propiedad ReadOnly de la nueva fila es para que no sea editable por el usuario
+            dataGridView1.Rows[nuevaFila].ReadOnly = true;
+            //AllowUserToAddRows en false para evitar que se creen más filas automáticamente
+            dataGridView1.AllowUserToAddRows = false;
         }
     }
 }
