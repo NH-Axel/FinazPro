@@ -19,5 +19,39 @@ namespace FinazPro
         {
             InitializeComponent();
         }
+
+        private void Historial_Click(object sender, EventArgs e)
+        {
+            Form historial = new Historial();
+            historial.Show();
+        }
+
+        private void Calcular_Click(object sender, EventArgs e)
+        {
+            double TotalC = 0;
+            foreach (DataGridViewRow fila in dataGridView1.Rows)
+            {
+                if (!fila.IsNewRow)
+                {
+                    object valorCostoUnidad = fila.Cells["costoUnidad"].Value;
+                    object valorCantidad = fila.Cells["cantidad"].Value;
+
+                    if (valorCostoUnidad != null && valorCantidad != null)
+                    {
+                        double costoUnidad = double.Parse(valorCostoUnidad.ToString());
+                        double cantidad = double.Parse(valorCantidad.ToString());
+                        double costoTotal = costoUnidad * cantidad;
+                        fila.Cells["CostoTotal"].Value = costoTotal;
+
+                        // Acumula el costo total dentro del bucle
+                        TotalC += costoTotal;
+                    }
+                }
+            }
+
+            // Agrega la suma total en una nueva fila al final del DataGridView
+            int nuevaFila = dataGridView1.Rows.Add();
+            dataGridView1.Rows[nuevaFila].Cells["CostoTotal"].Value = TotalC;
+        }
     }
 }
