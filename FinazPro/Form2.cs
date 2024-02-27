@@ -58,5 +58,65 @@ namespace FinazPro
             //AllowUserToAddRows en false para evitar que se creen más filas automáticamente
             dataGridView1.AllowUserToAddRows = false;
         }
+
+        private void Guardar_Click(object sender, EventArgs e)
+        {
+            string Ruta = Path.Combine(Application.StartupPath, "Productos\\");
+            string NombreP = nombreP.Text.ToString();
+            // Comprueba que el nombreIngresado no esté vacío antes de intentar guardar el archivo
+            if (!string.IsNullOrEmpty(NombreP))
+            {
+                string filePath = Ruta + NombreP + ".txt"; // Agrega la extensión .txt al nombre del archivo
+
+                try
+                {
+                    // Crear el archivo con los datos del DataGridView
+                    using (StreamWriter Crear = new StreamWriter(filePath))
+                    {
+                        // Escribir los encabezados de las columnas
+                        foreach (DataGridViewColumn columna in dataGridView1.Columns)
+                        {
+                            Crear.Write(columna.HeaderText + "\t");
+                        }
+                        Crear.WriteLine(); // Agregar una nueva línea después de escribir los encabezados
+
+                        // Escribir los datos de cada fila
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            if (!fila.IsNewRow)
+                            {
+                                foreach (DataGridViewCell celda in fila.Cells)
+                                {
+                                    if (celda.Value != null)
+                                    {
+                                        Crear.Write(celda.Value.ToString() + "\t");
+                                    }
+                                    else
+                                    {
+                                        Crear.Write("\t"); // Si la celda está vacía, escribe 1 espacio
+                                    }
+                                }
+                                Crear.WriteLine(); // Agregar una nueva línea después de escribir una fila
+                            }
+                        }
+                    }
+
+                    MessageBox.Show("Los datos se han guardado correctamente en el archivo.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al guardar los datos en el archivo: {ex.Message}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("El nombre de la ruta de acceso está vacío.");
+            }
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

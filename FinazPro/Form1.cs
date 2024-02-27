@@ -28,8 +28,8 @@ namespace FinazPro
       
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form formulario = new Form2();
-            formulario.Show();
+            Form incio = new Inicio();
+            incio.Show();
 
             this.Hide();
         }

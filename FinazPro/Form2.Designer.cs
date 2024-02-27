@@ -35,10 +35,8 @@
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CostoTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.nombreP = new System.Windows.Forms.MaskedTextBox();
             this.Guardar = new System.Windows.Forms.Button();
-            this.CrearPDF = new System.Windows.Forms.Button();
-            this.Historial = new System.Windows.Forms.Button();
             this.Calcular = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -51,11 +49,12 @@
             this.CostoUnidad,
             this.Cantidad,
             this.CostoTotal});
-            this.dataGridView1.Location = new System.Drawing.Point(68, 94);
+            this.dataGridView1.Location = new System.Drawing.Point(45, 61);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(995, 333);
+            this.dataGridView1.Size = new System.Drawing.Size(663, 216);
             this.dataGridView1.TabIndex = 1;
             // 
             // MateriaPrima
@@ -91,57 +90,41 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(296, 36);
+            this.label1.Location = new System.Drawing.Point(197, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 30);
+            this.label1.Size = new System.Drawing.Size(99, 21);
             this.label1.TabIndex = 2;
             this.label1.Text = "Producto: ";
             // 
-            // maskedTextBox1
+            // nombreP
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Modern No. 20", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(442, 33);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(281, 37);
-            this.maskedTextBox1.TabIndex = 3;
+            this.nombreP.Font = new System.Drawing.Font("Modern No. 20", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreP.Location = new System.Drawing.Point(295, 21);
+            this.nombreP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nombreP.Name = "nombreP";
+            this.nombreP.Size = new System.Drawing.Size(189, 27);
+            this.nombreP.TabIndex = 3;
             // 
             // Guardar
             // 
             this.Guardar.Font = new System.Drawing.Font("Modern No. 20", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Guardar.Location = new System.Drawing.Point(89, 535);
+            this.Guardar.Location = new System.Drawing.Point(59, 348);
+            this.Guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Guardar.Name = "Guardar";
-            this.Guardar.Size = new System.Drawing.Size(147, 52);
+            this.Guardar.Size = new System.Drawing.Size(98, 34);
             this.Guardar.TabIndex = 4;
             this.Guardar.Text = "Guardar";
             this.Guardar.UseVisualStyleBackColor = true;
-            // 
-            // CrearPDF
-            // 
-            this.CrearPDF.Font = new System.Drawing.Font("Modern No. 20", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CrearPDF.Location = new System.Drawing.Point(346, 535);
-            this.CrearPDF.Name = "CrearPDF";
-            this.CrearPDF.Size = new System.Drawing.Size(187, 52);
-            this.CrearPDF.TabIndex = 5;
-            this.CrearPDF.Text = "Crear PDF";
-            this.CrearPDF.UseVisualStyleBackColor = true;
-            // 
-            // Historial
-            // 
-            this.Historial.Font = new System.Drawing.Font("Modern No. 20", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Historial.Location = new System.Drawing.Point(876, 535);
-            this.Historial.Name = "Historial";
-            this.Historial.Size = new System.Drawing.Size(187, 52);
-            this.Historial.TabIndex = 6;
-            this.Historial.Text = "Historial";
-            this.Historial.UseVisualStyleBackColor = true;
-            this.Historial.Click += new System.EventHandler(this.Historial_Click);
+            this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
             // 
             // Calcular
             // 
             this.Calcular.Font = new System.Drawing.Font("Modern No. 20", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Calcular.Location = new System.Drawing.Point(636, 535);
+            this.Calcular.Location = new System.Drawing.Point(611, 348);
+            this.Calcular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Calcular.Name = "Calcular";
-            this.Calcular.Size = new System.Drawing.Size(147, 52);
+            this.Calcular.Size = new System.Drawing.Size(98, 34);
             this.Calcular.TabIndex = 7;
             this.Calcular.Text = "Calcular";
             this.Calcular.UseVisualStyleBackColor = true;
@@ -149,19 +132,19 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1164, 643);
+            this.ClientSize = new System.Drawing.Size(776, 418);
             this.Controls.Add(this.Calcular);
-            this.Controls.Add(this.Historial);
-            this.Controls.Add(this.CrearPDF);
             this.Controls.Add(this.Guardar);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.nombreP);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form2";
-            this.Text = "FinazPro 0.01v";
+            this.Text = "FinazPro 0.1";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -176,10 +159,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn CostoTotal;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox nombreP;
         private System.Windows.Forms.Button Guardar;
-        private System.Windows.Forms.Button CrearPDF;
-        private System.Windows.Forms.Button Historial;
         private System.Windows.Forms.Button Calcular;
     }
 }
